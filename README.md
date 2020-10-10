@@ -1,4 +1,4 @@
-![{{alt text}}](https://github.com/{{github user}}/{{github repo}}/workflows/{{workflow%20Build and Deploy to Google Cloud Storage}}/badge.svg)
+[![Workflow Action Status](https://github.com/adrinamin/website_static/workflows/workflowworkflow%20Build and Deploy to Google Cloud Storage/badge.svg)](https://github.com/adrinamin/website_static/actions)
 
 # website_static
 My personal static website
