@@ -26,4 +26,4 @@ jobs:
 
     - name: Deploy
       run: |-
-        gsutil -m rsync -R /source/ gs://$GCS_BUCKET
+        gsutil rsync ./source/ gs://$GCS_BUCKET
