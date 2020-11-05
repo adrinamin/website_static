@@ -1,15 +1,56 @@
+/*
+general--------------------------------------------------------------------------------
+*/
 body {
-    font-family: "Courier New", Courier, monospace;
-    color: #2eff7b;
-    background-color: black;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  color: #2eff7b;
+  background-color: black;
+}
+
+.container {
+  margin-top: 5rem;
 }
 
 .centered-welcome {
-    margin: auto;
-    width: 50%;
-    text-align: center;
+  margin: auto;
+  width: 50%;
+  text-align: center;
 }
 
+/*
+navigationbar----------------------------------------------------------------------------
+*/
+ul.navigationbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+ul.navigationbar li{
+  float: right;
+}
+
+ul.navigationbar li a {
+  display: block;
+  color: #2eff7b;;
+  text-align: center;
+  padding: 2rem 2rem;
+  text-decoration: none;
+}
+
+ul.navigationbar li a:hover {
+  cursor: pointer;
+  font-weight: 900;
+}
+
+/*
+social media links---------------------------------------------------------------------
+*/
 .social-media-links {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -25,22 +66,10 @@ body {
     margin-bottom: 1rem;
 }
 
-@media only screen and (min-width: 600px)
-{
-    .social-media-links {
-        margin-bottom: 5rem;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
 
-    .social-media-links a {
-        margin-bottom: 0;
-    }
-}
-
+/*
+squares----------------------------------------------------------------------------
+*/
 @keyframes square-animation {
     0% {
       left: 0;
@@ -182,5 +211,24 @@ body {
 
 .loading__square:nth-of-type(7) {
     animation-delay: -10s;
+}
+
+/*
+breakpoints------------------------------------------------------------------
+*/
+@media only screen and (min-width: 600px)
+{
+    .social-media-links {
+        margin-bottom: 5rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .social-media-links a {
+        margin-bottom: 0;
+    }
 }
   
