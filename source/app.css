@@ -10,6 +10,8 @@ body {
 
 .container {
   margin-top: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .centered-welcome {
@@ -32,7 +34,25 @@ ul.navigationbar {
 }
 
 ul.navigationbar li{
+  float: left;
+}
+
+ul.navigationbar li a:hover {
+  cursor: pointer;
+  font-weight: 900;
+}
+
+ul.navigationbar li.social-media {
   float: right;
+}
+
+ul.navigationbar li.social-media a{
+  padding: 1.5rem 1.5rem;
+}
+
+ul.navigationbar.social-media li a:hover {
+  cursor: pointer;
+  font-weight: 900;
 }
 
 ul.navigationbar li a {
@@ -43,29 +63,12 @@ ul.navigationbar li a {
   text-decoration: none;
 }
 
-ul.navigationbar li a:hover {
-  cursor: pointer;
-  font-weight: 900;
-}
-
 /*
-social media links---------------------------------------------------------------------
+about page---------------------------------------------------------------------
 */
-.social-media-links {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    display: grid;
-    grid-template-columns: 1fr;
+.about {
+  margin-top: 10rem;
 }
-
-.social-media-links a {
-    place-self: center;
-    margin-bottom: 1rem;
-}
-
 
 /*
 squares----------------------------------------------------------------------------
