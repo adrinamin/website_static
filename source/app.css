@@ -1,73 +1,228 @@
 /*
 general--------------------------------------------------------------------------------
 */
-body {
-  margin: 0;
+:root {
   font-family: "Courier New", Courier, monospace;
-  color: #2eff7b;
+  --text-primary: #2eff7b;
+  --background: #000000;
+}
+
+html {
+  scrollbar-color: var(--text-primary) var(--background);
+}
+
+body {
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
   background-color: black;
 }
 
+
 .container {
-  margin-top: 5rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  margin-top: 4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .centered-welcome {
-  margin: auto;
-  width: 50%;
+  margin: 0;
+  width: 100%;
   text-align: center;
+}
+
+@media only screen and (min-width: 600px){
+  .container {
+    margin-top: 4rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  
+  .centered-welcome {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+  }
 }
 
 /*
 navigationbar----------------------------------------------------------------------------
 */
-ul.navigationbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  position: fixed;
+
+/*
+mobile navigation bar behavior
+*/
+
+/*
+navbar
+*/
+header.navbar {
   top: 0;
+  position: fixed;
+  background-color: var(--background);
+  /* box-shadow: 1px 1px 4px 0 rgba(46,255,123,.5); */
+  width: 100%;
+  z-index: 3;
+}
+
+header.navbar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+header.navbar ul li a{
+  display: block;
+  padding: 0.5rem 0.5rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+header.navbar ul li a:hover {
+  cursor: pointer;
+  font-weight: 900;
+}
+
+/*
+navbar items
+*/
+header.navbar ul.nav-list {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/*
+menu icon
+*/
+header.navbar label.menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 1.5rem 1.5rem;
+  position: relative;
+  user-select: none;
+}
+
+header.navbar .menu-icon .nav-icon {
+  background: var(--text-primary);
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+header.navbar .menu-icon .nav-icon:before,
+header.navbar .menu-icon .nav-icon:after {
+  background: var(--text-primary);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
   width: 100%;
 }
 
-ul.navigationbar li{
-  float: left;
+header.navbar .menu-icon .nav-icon:before {
+  top: 5px;
 }
 
-ul.navigationbar li a:hover {
-  cursor: pointer;
-  font-weight: 900;
+header.navbar .menu-icon .nav-icon:after {
+  top: -5px;
 }
 
-ul.navigationbar li.social-media {
-  float: right;
+/*
+menu btn
+*/
+
+header.navbar .menu-btn {
+  display: none;
 }
 
-ul.navigationbar li.social-media a{
-  padding: 1.5rem 1.5rem;
+header.navbar .menu-btn:checked ~ ul.nav-list {
+  max-height: 240px;
 }
 
-ul.navigationbar.social-media li a:hover {
-  cursor: pointer;
-  font-weight: 900;
+header.navbar .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
 }
 
-ul.navigationbar li a {
-  display: block;
-  color: #2eff7b;;
-  text-align: center;
-  padding: 2rem 2rem;
-  text-decoration: none;
+header.navbar .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top:0;
+}
+
+header.navbar .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top:0;
+}
+
+/*
+social media icons
+*/
+header.navbar ul.nav-list li.social-media {
+  display: none;
+}
+
+/*
+navigation bar for big screens
+*/
+@media only screen and (min-width: 48em){
+
+  header.navbar ul li {
+    float: left;
+  }
+
+  header.navbar ul li a {
+    padding: 1.5rem 1.5rem;
+  }
+
+  header.navbar ul.nav-list {
+    clear: none;
+    max-height: none;
+  }
+
+  header.navbar label.menu-icon {
+    display: none;
+  }
+
+  header.navbar ul.nav-list li.social-media {
+    display: block;
+    padding: 0;
+    margin: 0;
+    float: right;
+  }
+
+  header.navbar ul.nav-list li.social-media a {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 0.5rem;
+    padding-right: 1rem;
+  }
+
+  header.navbar ul.nav-list li.social-media a img {
+    width: 20px;
+    height: 20px;
+  }
+
+
 }
 
 /*
 about page---------------------------------------------------------------------
 */
 .about {
-  margin-top: 10rem;
+  margin-top: 6rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+@media only screen and (min-width: 600px){
+  .about {
+    margin-top: 10rem;
+  }
 }
 
 /*
@@ -216,22 +371,4 @@ squares-------------------------------------------------------------------------
     animation-delay: -10s;
 }
 
-/*
-breakpoints------------------------------------------------------------------
-*/
-@media only screen and (min-width: 600px)
-{
-    .social-media-links {
-        margin-bottom: 5rem;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .social-media-links a {
-        margin-bottom: 0;
-    }
-}
   
