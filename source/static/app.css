@@ -60,7 +60,7 @@ header.navbar {
   top: 0;
   position: fixed;
   background-color: var(--background);
-  /* box-shadow: 1px 1px 4px 0 rgba(46,255,123,.5); */
+  box-shadow: 1px 1px 4px 0 rgba(46,255,123,.5);
   width: 100%;
   z-index: 3;
 }
@@ -170,6 +170,10 @@ header.navbar ul.nav-list li.social-media {
 navigation bar for big screens
 */
 @media only screen and (min-width: 48em){
+
+  header.navbar {
+    box-shadow: none;
+  }
 
   header.navbar ul li {
     float: left;
