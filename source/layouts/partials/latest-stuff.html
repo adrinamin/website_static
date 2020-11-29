@@ -1,0 +1,26 @@
+<div class="latest-container">
+    <div class="latest-notes">
+        <h2>Latest notes</h2>
+        {{ $notes := first 5 (where .Site.RegularPages "Section" "==" "notes") }}
+        <ul>
+            {{ range $notes }}
+            <li class="card">
+                <h2><a href="{{ .Permalink }}">{{ .Title }}</a> </h2>
+                <p>{{ .Date.Format "Mon Jan 2 2006" }}</p>
+                {{ if isset .Params "tags" }}
+                    <ul>
+                        {{ range .Param "tags"}}
+                            <li class="latest-notes-tag">
+                                <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                            </li>
+                        {{ end }}
+                    </ul> 
+                {{ end }}
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+    <div>
+        <!--coming soon-->
+    </div>
+</div>

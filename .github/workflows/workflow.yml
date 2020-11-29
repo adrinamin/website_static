@@ -17,6 +17,17 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+          hugo-version: 'latest'
+
+    - name: Clean public directory
+      run: rm -rf public
+
+    - name: Build
+      run: hugo
+
     - name: Setup - gcloud / gsutil
       uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
       with:
@@ -26,4 +37,4 @@ jobs:
 
     - name: Deploy
       run: |-
-        gsutil rsync -R ./source/ gs://$GCS_BUCKET
+        gsutil rsync -R ./source/public/ gs://$GCS_BUCKET

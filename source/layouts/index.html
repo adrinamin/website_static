@@ -1,0 +1,6 @@
+{{ define "main"}}
+<div class="intro">
+    {{ with .Site.GetPage "" }}{{ .Content }}{{ end }}
+</div>
+{{ partial "latest-stuff" . }}
+{{ end }}

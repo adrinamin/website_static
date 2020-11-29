@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    {{ partialCached "head" .}}
+  </head>
+  <body>
+    {{ partialCached "navbar" . }}
+    <!-- Code that all your templates share, like a header -->
+    <div class="container">
+      {{ block "main" . }}
+      <!-- The part of the page that begins to differ between templates -->
+      {{ end }}
+    </div>
+    {{ partialCached "footer" . }}
+  </body>
+</html>
