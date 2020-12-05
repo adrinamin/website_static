@@ -6,6 +6,7 @@ date: 2020-11-28T12:50:06+01:00
 draft: true
 ---
 
+{{< round-image src="../images/adrin-min.png" >}}
 ## Hi, I'm Adrin
 
 I'm a software engineer and technology enthusiast. I'm passionate about technology which excites people up and moves society forward. So that in the end, everybody can benefit from new technologies.

@@ -3,7 +3,7 @@ title: "Frequently used Hugo variables"
 sub_header: ""
 date: 2020-11-29T13:21:00+01:00
 tags: ["Hugo"]
-draft: false
+draft: true
 toc: false
 ---
 

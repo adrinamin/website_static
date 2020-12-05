@@ -3,7 +3,7 @@ title: "Folder Structure"
 sub_header: ""
 date: 2020-11-28T19:11:32+01:00
 tags: ["Hugo"]
-draft: false
+draft: true
 toc: false
 ---
 
