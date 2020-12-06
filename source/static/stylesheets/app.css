@@ -65,7 +65,7 @@ header.navbar {
   top: 0;
   position: fixed;
   background-color: var(--background);
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 2px 5px #aaaaaa;
   width: 100%;
   z-index: 3;
 }
