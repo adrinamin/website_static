@@ -240,7 +240,7 @@ footer p {
 about page---------------------------------------------------------------------
 */
 .about {
-  margin-top: 6rem;
+  margin-top: 3rem;
   margin-left: 2rem;
   margin-right: 2rem;
 }
@@ -257,7 +257,10 @@ about page---------------------------------------------------------------------
 
 @media only screen and (min-width: 600px){
   .about {
-    margin-top: 10rem;
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
