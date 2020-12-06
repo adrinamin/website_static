@@ -38,7 +38,7 @@ body {
 
 @media only screen and (min-width: 600px){
   .container {
-    margin-top: 5rem;
+    margin-top: 8rem;
     margin-left: 5rem;
     margin-right: 5rem;
   }
@@ -68,6 +68,21 @@ header.navbar {
   box-shadow: 0 2px 5px #aaaaaa;
   width: 100%;
   z-index: 3;
+}
+
+header.navbar img.logo {
+  top: 0.5rem;
+  left: 1rem;
+  position: absolute;
+  width: 40px; 
+  height: 32px;
+}
+
+header.navbar h2 {
+  display: none;
+  position: relative;
+  left: 0;
+  bottom: 0;
 }
 
 header.navbar ul {
@@ -180,6 +195,22 @@ navigation bar for big screens
     box-shadow: none;
   }
 
+  header.navbar img.logo {
+    padding: 1rem 1.5rem;
+    position: relative;
+    width: 60px;
+    height: 46px;
+  }
+
+  /* header.navbar img {
+  } */
+
+  header.navbar h2 {
+    display: inline;
+    left: 1rem;
+    bottom: 1rem;
+  }
+
   header.navbar ul li {
     float: left;
   }
@@ -191,6 +222,7 @@ navigation bar for big screens
   header.navbar ul.nav-list {
     clear: none;
     max-height: none;
+    float: right;
   }
 
   header.navbar label.menu-icon {
@@ -201,7 +233,6 @@ navigation bar for big screens
     display: block;
     padding: 0;
     margin: 0;
-    float: right;
   }
 
   header.navbar ul.nav-list li.social-media a {
