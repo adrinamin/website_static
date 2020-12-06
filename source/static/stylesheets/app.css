@@ -256,16 +256,51 @@ footer
 footer {
   position: fixed;
   bottom: 0;
-  text-align: center;
   width: 100%;
   background-color: var(--background);
   z-index: 3;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li.footer-list-item {
+  float: left;
+  margin-right: 0.5rem;
+}
+
+footer ul li.footer-list-item a {
+  text-decoration: none;
+}
+
+footer ul li.footer-list-item a img {
+  width: 20px;
+  height: 20px;
 }
 
 footer p {
   font-size: 0.8rem;
 }
 
+@media only screen and (min-width: 48em){
+  footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: var(--background);
+    z-index: 3;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+
+  footer ul {
+    display: none;
+  }
+}
 
 /*
 about page---------------------------------------------------------------------
