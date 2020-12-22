@@ -22,14 +22,11 @@ jobs:
       with:
           hugo-version: 'latest'
 
-    - name: Clean public directory
-      run: rm -rf public
-
     - name: go to directory
       run: cd source/
 
     - name: Build
-      run: hugo
+      run: hugo --minify
 
     - name: Setup - gcloud / gsutil
       uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
