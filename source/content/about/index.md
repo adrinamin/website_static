@@ -3,7 +3,7 @@ title: "About"
 sub_header: ""
 slug: "about"
 date: 2020-11-28T12:50:06+01:00
-draft: true
+draft: false
 ---
 
 {{< round-image src="../images/adrin-min.png" >}}
