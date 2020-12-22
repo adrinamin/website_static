@@ -21,7 +21,9 @@ jobs:
       uses: peaceiris/actions-hugo@v2
       with:
           hugo-version: 'latest'
-
+    - name: show directory
+      run: pwd
+      
     - name: go to directory
       run: cd source/
 
