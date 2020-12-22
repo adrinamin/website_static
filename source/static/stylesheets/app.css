@@ -24,9 +24,9 @@ body {
 
 
 .container {
-  margin-top: 4rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-top: 8rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
   margin-bottom: 4rem;
 }
 
@@ -339,6 +339,19 @@ intro
   width: 100%;
 }
 
+.intro p {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.intro h1 {
+  margin: 0 0 0.5rem 0;
+}
+
+.intro h3 {
+  margin: 0 0 0.5rem 0;
+}
+
 @media only screen and (min-width: 48em){
   .intro {
     width: 50%;
@@ -368,7 +381,7 @@ latest notes section------------------------------------------------------------
   border-style: solid;
   border-color: var(--tag-background);
   border-radius: 5px;
-  margin: 1rem;
+  margin: 1rem 0 1rem 0;
   padding: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
