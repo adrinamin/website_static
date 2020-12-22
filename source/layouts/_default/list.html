@@ -1,11 +1,54 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h2>
+<h1 class="default-tag-list-title">{{ .Title }}</h2>
 <ul class="default-tag-list">
-  {{ range .Pages }}
+  {{ range .Paginator.Pages }}
   <li>
     <h2>{{ .Title}}</h3>
     <a href="{{ .Permalink }}">read more</a>
   </li>
   {{ end }}
 </ul>
+
+{{ $paginator := .Paginator}}
+{{ if gt $paginator.TotalPages 1}}
+<ul class="paginator">
+  {{ if ne $paginator.PageNumber 1}}
+  <li>
+    <a href="{{ $paginator.First.URL }}">
+      &laquo;&laquo;
+    </a>
+  </li>
+  {{ end }}
+
+  {{ if $paginator.HasPrev}}
+  <li>
+    <a href="{{ $paginator.Prev.URL }}">
+      &laquo;
+    </a>
+  </li>
+  {{ end }}
+
+  <li>
+    <a>{{ $paginator.PageNumber }}</a>
+  </li>
+
+  {{ if $paginator.HasNext}}
+  <li>
+    <a href="{{ $paginator.Next.URL }}">
+      &raquo;
+    </a>
+  </li>
+  {{ end }}
+
+  {{ if ne $paginator.PageNumber $paginator.TotalPages }}
+  <li>
+    <a href="{{ $paginator.Last.URL }}">
+      &raquo;&raquo;
+    </a>
+  </li>
+  {{ end }}
+
+</ul>
+{{ end }}
+
 {{ end }}

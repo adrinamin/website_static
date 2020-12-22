@@ -436,9 +436,15 @@ li.latest-notes-tag {
 /*
 list pages -----------------------------------------------------------------------------------
 */
+.default-tag-list-title {
+  font-size: 3rem;
+  width: 100%;
+}
+
 .default-tag-list {
   list-style: none;
   padding: 0;
+  width: 100%;
 }
 
 .default-tag-list li {
@@ -466,6 +472,25 @@ list pages ---------------------------------------------------------------------
   animation-duration: 1s;
 }
 
+.paginator {
+  position: absolute;
+  bottom: 6rem;
+  padding: 0;
+  left: 25%;
+}
+
+.paginator li {
+  display: inline;
+  float: left;
+}
+
+.paginator li a {
+  color: var(--text-primary);
+  padding: 0.5rem 0.5rem;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
 @keyframes anchorbtn {
   from {
     background-color: transparent;
@@ -474,5 +499,22 @@ list pages ---------------------------------------------------------------------
   to {
     background-color: var(--list-anchor-color);
     color: white;
+  }
+}
+
+@media only screen and (min-width: 48em){
+  .default-tag-list-title {
+    font-size: 3.5rem;
+    margin: auto;
+    width: 50%;
+  }
+
+  .default-tag-list {
+    margin: auto;
+    width: 50%;
+  }
+
+  .paginator {
+    left: 50%;
   }
 }
