@@ -28,7 +28,10 @@ jobs:
       run: ls -alh
 
     - name: go to directory
-      run: cd source/
+      run: cd source
+
+    - name: list
+      run: ls -alh
 
     - name: Build
       run: hugo --minify
