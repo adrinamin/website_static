@@ -24,11 +24,11 @@ jobs:
     - name: show directory
       run: pwd
 
+    - name: list
+      run: ll
+
     - name: go to directory
       run: cd source/
-
-    - name: show directory
-      run: pwd
 
     - name: Build
       run: hugo --minify
