@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Adrin Amin Salehi</title>
+    <link>https://adrinaminsalehi.com/</link>
+    <description>Recent content on Adrin Amin Salehi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Nov 2020 17:49:22 +0100</lastBuildDate><atom:link href="https://adrinaminsalehi.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://adrinaminsalehi.com/about/</link>
+      <pubDate>Sat, 28 Nov 2020 12:50:06 +0100</pubDate>
+      
+      <guid>https://adrinaminsalehi.com/about/</guid>
+      <description>Hi, I&#39;m Adrin,   I&#39;m a Technology enthusiast and software engineer.  I deeply care about the role of technology in our society. I always try to find ways to use our craft and tools to improve our environment, and eventually peoples lifes. So that in the end, everybody can benefit from new technologies. I never stop learning and I always try apply my new skills to solve real world problems.</description>
+    </item>
+    
+  </channel>
+</rss>
