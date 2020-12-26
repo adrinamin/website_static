@@ -10,26 +10,26 @@ jobs:
   build_and_deploy:
     name: build and build_and_deploy
     runs-on: ubuntu-latest
-    
+
     steps:
-      - name: checkout
-        uses: actions/checkout@v2
+    - name: checkout
+      uses: actions/checkout@v2
 
-      - name: setup hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-            hugo-version: 'latest'
-      
-      - name: build      
-      - run: hugo --minify
-        working-directory: source/
+    - name: setup hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+          hugo-version: 'latest'
+    
+    - name: build      
+    - run: hugo --minify
+      working-directory: source/
 
-      - name: setup firebase and deploy
-        uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_ADRINAMINSALEHI_WEBSITE }}'
-          channelId: live
-          projectId: adrinaminsalehi-website
-        env:
-          FIREBASE_CLI_PREVIEWS: hostingchannels
+    - name: setup firebase and deploy
+      uses: FirebaseExtended/action-hosting-deploy@v0
+      with:
+        repoToken: '${{ secrets.GITHUB_TOKEN }}'
+        firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_ADRINAMINSALEHI_WEBSITE }}'
+        channelId: live
+        projectId: adrinaminsalehi-website
+      env:
+        FIREBASE_CLI_PREVIEWS: hostingchannels
