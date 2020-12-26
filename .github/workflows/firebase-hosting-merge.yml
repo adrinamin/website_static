@@ -4,7 +4,7 @@ on:
   push:
     branches:
     - master
-    
+
 jobs:
   build_and_deploy:
     name: build and build_and_deploy
@@ -20,7 +20,7 @@ jobs:
           hugo-version: 'latest'
     
     - name: build      
-    - run: hugo --minify
+      run: hugo --minify
       working-directory: source/
 
     - name: setup firebase and deploy
