@@ -9,4 +9,4 @@ toc: false
 
 Hello Folks,
 # I am Adrin.
-### Technology Enthusiast and Software Engineer.
+### Technology Enthusiast and Software Developer.
