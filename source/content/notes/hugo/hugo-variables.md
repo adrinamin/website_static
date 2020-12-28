@@ -7,8 +7,6 @@ draft: true
 toc: false
 ---
 
-# Most important Hugo Variables
-
 In general you access variables with open and closed curly braces.
 
 Here is a list of the most important variables which I frequently used:

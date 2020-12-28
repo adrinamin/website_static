@@ -1,13 +1,11 @@
 ---
-title: "Folder Structure"
+title: "Playing around with Hugo static site generator"
 sub_header: ""
 date: 2020-11-28T19:11:32+01:00
 tags: ["Hugo"]
 draft: true
 toc: false
 ---
-
-# Playing around with Hugo static site generator
 
 I'm currently playing around with the static site generator Hugo lately. It's a very powerful static site generator, written in go. 
 

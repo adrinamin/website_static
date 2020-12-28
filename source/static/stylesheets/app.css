@@ -519,7 +519,6 @@ list pages ---------------------------------------------------------------------
   }
 }
 
-
 /*
 404 page --------------------------------------------------------------------------
 */
@@ -527,4 +526,26 @@ list pages ---------------------------------------------------------------------
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+}
+
+/*
+single page -------------------------------------------------------------------------
+*/
+p.single-page-date {
+  font-size: smaller;
+}
+
+ul.single-page-tags {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.single-page-tags li {
+  display: inline;
+  float: left;
+}
+
+ul.single-page-tags li a {
+  text-decoration: none;
 }
