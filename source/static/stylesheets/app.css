@@ -532,8 +532,17 @@ list pages ---------------------------------------------------------------------
 /*
 single page -------------------------------------------------------------------------
 */
+.single-page-container {
+  width: 100%;
+}
+
+.single-page-container h1 {
+  font-size: 2rem;
+}
+
 p.single-page-date {
-  font-size: smaller;
+  font-size: 0.8rem;
+  color: var(--list-anchor-color);
 }
 
 ul.single-page-tags {
@@ -549,4 +558,16 @@ ul.single-page-tags li {
 
 ul.single-page-tags li a {
   text-decoration: none;
+  font-size: 0.9rem;
+}
+
+@media only screen and (min-width: 48em){
+  .single-page-container {
+    width: 50%;
+    margin: auto;
+  }
+
+  .single-page-container h1 {
+    font-size: 2.5rem;
+  }
 }

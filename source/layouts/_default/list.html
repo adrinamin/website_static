@@ -1,9 +1,9 @@
 {{ define "main" }}
-<h1 class="default-tag-list-title">{{ .Title }}</h2>
+<h1 class="default-tag-list-title">{{ .Title }}</h1>
 <ul class="default-tag-list">
   {{ range .Paginator.Pages }}
   <li>
-    <h2>{{ .Title}}</h3>
+    <h2>{{ .Title}}</h2>
     <a href="{{ .Permalink }}">read more</a>
   </li>
   {{ end }}
