@@ -401,6 +401,7 @@ latest notes section------------------------------------------------------------
 
 li.latest-notes-tag {
   border-style: none;
+  display: inline;
 }
 
 .latest-notes-tag a {
