@@ -387,11 +387,11 @@ latest notes section------------------------------------------------------------
   padding: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  cursor: pointer;
 }
 
 .latest-container .latest-notes ul li.card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor: inherit;
 }
 
 .latest-container .latest-notes ul li.card a {
