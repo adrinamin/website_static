@@ -5,7 +5,7 @@ general-------------------------------------------------------------------------
   font-family: "Segoe UI", "Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   /* --text-primary: #2eff7b;
   --background: #000000; */
-  --ggs:1
+  --ggs:1;
   --text-primary: #000000;
   --background: #ffffff;
   --tag-background: #e6e6e6;
@@ -14,7 +14,7 @@ general-------------------------------------------------------------------------
   --navbar-box-shadow-color: #F2F0F0;
 }
 
-@media screen and (prefers-color-scheme: dark) {
+/* @media screen and (prefers-color-scheme: dark) {
   :root {
     --text-primary: #ffffff;
     --background: #3C3C3C;
@@ -23,7 +23,7 @@ general-------------------------------------------------------------------------
     --list-anchor-color: #A9A9A9;
     --navbar-box-shadow-color: #373737;
   }
-}
+} */
 
 html {
   scrollbar-color: var(--text-primary) var(--tag-background);
