@@ -5,15 +5,28 @@ general-------------------------------------------------------------------------
   font-family: "Segoe UI", "Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   /* --text-primary: #2eff7b;
   --background: #000000; */
+  --ggs:1
   --text-primary: #000000;
   --background: #ffffff;
   --tag-background: #e6e6e6;
   --tag-border-color: #A9A9A9;
   --list-anchor-color: #A9A9A9;
+  --navbar-box-shadow-color: #F2F0F0;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --text-primary: #ffffff;
+    --background: #3C3C3C;
+    --tag-background: #4A4A4A;
+    --tag-border-color: #A9A9A9;
+    --list-anchor-color: #A9A9A9;
+    --navbar-box-shadow-color: #373737;
+  }
 }
 
 html {
-  scrollbar-color: var(--text-primary) var(--background);
+  scrollbar-color: var(--text-primary) var(--tag-background);
 }
 
 body {
@@ -22,7 +35,6 @@ body {
   padding: 0;
   background-color: var(--background);
 }
-
 
 .container {
   margin-top: 8rem;
@@ -66,7 +78,7 @@ header.navbar {
   top: 0;
   position: fixed;
   background-color: var(--background);
-  box-shadow: 0 2px 5px #aaaaaa;
+  box-shadow: 0 0.8rem 1rem var(--navbar-box-shadow-color);
   width: 100%;
   z-index: 3;
 }
@@ -187,14 +199,16 @@ header.navbar ul.nav-list li.social-media {
   display: none;
 }
 
+.social-media-icon{
+  fill: var(--text-primary);
+  width: 20px;
+  height: 20px;
+}
+
 /*
 navigation bar for big screens
 */
 @media only screen and (min-width: 48em){
-
-  header.navbar {
-    box-shadow: none;
-  }
 
   header.navbar img.logo {
     padding: 0.5rem 1.5rem;
@@ -235,6 +249,14 @@ navigation bar for big screens
     padding: 0;
     margin: 0;
   }
+
+  /* header.navbar ul.nav-list li.dark-mode-switch {
+    display: block;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 0.5rem;
+    padding-right: 1rem;
+  } */
 
   header.navbar ul.nav-list li.social-media a {
     padding-top: 1.5rem;
@@ -570,4 +592,45 @@ ul.single-page-tags li a {
   .single-page-container h1 {
     font-size: 2.5rem;
   }
+}
+
+/*
+icons------------------------------------------------------------------------------------------------------------------------
+*/
+.gg-dark-mode {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  border:2px solid;
+  border-radius:100px;
+  width:20px;
+  height:20px
+}
+.gg-dark-mode::after,
+.gg-dark-mode::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  display: block
+}
+.gg-dark-mode::before {
+  border:5px solid;
+  border-top-left-radius:100px;
+  border-bottom-left-radius:100px;
+  border-right: 0;
+  width:9px;
+  height:18px;
+  top:-1px;
+  left:-1px
+}
+.gg-dark-mode::after {
+  border:4px solid;
+  border-top-right-radius:100px;
+  border-bottom-right-radius:100px;
+  border-left: 0;
+  width:4px;
+  height:8px;
+  right:4px;
+  top:4px
 }
