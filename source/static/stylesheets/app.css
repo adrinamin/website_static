@@ -14,7 +14,10 @@ general-------------------------------------------------------------------------
   --navbar-box-shadow-color: #F2F0F0;
 }
 
-@media screen and (prefers-color-scheme: dark) {
+/*
+use color scheme depending on users pereference
+*/
+/* @media screen and (prefers-color-scheme: dark) {
   :root {
     --text-primary: #ffffff;
     --background: #3C3C3C;
@@ -23,6 +26,24 @@ general-------------------------------------------------------------------------
     --list-anchor-color: #A9A9A9;
     --navbar-box-shadow-color: #373737;
   }
+} */
+
+[data-theme="dark"] {
+  --text-primary: #ffffff;
+  --background: #3C3C3C;
+  --tag-background: #4A4A4A;
+  --tag-border-color: #A9A9A9;
+  --list-anchor-color: #A9A9A9;
+  --navbar-box-shadow-color: #373737;
+}
+
+[data-theme="light"] {
+  --text-primary: #000000;
+  --background: #ffffff;
+  --tag-background: #e6e6e6;
+  --tag-border-color: #A9A9A9;
+  --list-anchor-color: #A9A9A9;
+  --navbar-box-shadow-color: #F2F0F0;
 }
 
 html {
@@ -111,6 +132,10 @@ header.navbar ul li a{
   text-decoration: none;
   color: var(--text-primary);
   text-align: center;
+}
+
+header.navbar ul li label {
+  margin: 0;
 }
 
 header.navbar ul li a:hover {
@@ -232,6 +257,10 @@ navigation bar for big screens
 
   header.navbar ul li a {
     padding: 1.5rem 1.5rem;
+  }
+
+  header.navbar ul li label {
+    margin: 1.5rem 1.5rem;
   }
 
   header.navbar ul.nav-list {
