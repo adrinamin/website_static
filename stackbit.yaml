@@ -1,0 +1,72 @@
+stackbitVersion: ~0.3.0
+dataDir: source
+pagesDir: source/content
+ssgName: hugo
+cmsName: git
+models:
+  about:
+    type: page
+    label: About
+    folder: about
+    match: '*'
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: sub_header
+        label: Sub Header
+      - type: string
+        name: slug
+        label: Slug
+      - type: datetime
+        name: date
+        label: Date
+      - type: boolean
+        name: draft
+        label: Draft
+  content:
+    type: page
+    label: Content
+    match: '**/*'
+    exclude:
+      - about/index.md
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: sub_header
+        label: Sub Header
+      - type: datetime
+        name: date
+        label: Date
+      - type: list
+        name: tags
+        label: Tags
+        items:
+          type: string
+      - type: boolean
+        name: draft
+        label: Draft
+      - type: boolean
+        name: toc
+        label: Toc
+  config:
+    type: data
+    label: Config
+    file: config.toml
+    fields:
+      - type: string
+        name: baseURL
+        label: Base URL
+      - type: string
+        name: languageCode
+        label: Language Code
+      - type: string
+        name: title
+        label: Title
+      - type: number
+        name: paginate
+        label: Paginate
+        subtype: int
