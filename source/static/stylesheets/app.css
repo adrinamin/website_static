@@ -12,6 +12,7 @@ general-------------------------------------------------------------------------
   --tag-border-color: #A9A9A9;
   --list-anchor-color: #A9A9A9;
   --navbar-box-shadow-color: #F2F0F0;
+  --tag-font-single-page: #000000;
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -22,6 +23,7 @@ general-------------------------------------------------------------------------
     --tag-border-color: #A9A9A9;
     --list-anchor-color: #A9A9A9;
     --navbar-box-shadow-color: #373737;
+    --tag-font-single-page: #ffffff;
   }
 }
 
@@ -581,6 +583,7 @@ ul.single-page-tags li {
 ul.single-page-tags li a {
   text-decoration: none;
   font-size: 0.9rem;
+  color: var(--tag-font-single-page);
 }
 
 @media only screen and (min-width: 48em){
