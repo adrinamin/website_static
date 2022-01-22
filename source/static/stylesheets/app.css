@@ -340,6 +340,7 @@ about page---------------------------------------------------------------------
   width: 10rem;
   height: 10rem;
   object-fit: cover;
+  object-position: 60% 40%;
   margin-left: auto;
   margin-right: auto;
   display: block;

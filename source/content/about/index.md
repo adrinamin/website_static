@@ -6,7 +6,7 @@ date: 2020-11-28T12:50:06+01:00
 draft: false
 ---
 
-{{< round-image src="../images/adrin-min.png" >}}
+{{< round-image src="../images/adrin-min.jpeg" >}}
 
 {{< text-style class="about" >}}
 
