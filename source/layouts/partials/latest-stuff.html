@@ -1,6 +1,6 @@
 <div class="latest-container">
     <div class="latest-notes">
-        <h2>Latest notes</h2>
+        <h2>Latest articles</h2>
         {{ $notes := first 5 (where .Site.RegularPages "Section" "==" "notes") }}
         <ul>
             {{ range $notes }}
@@ -22,8 +22,21 @@
             {{ end }}
         </ul>
     </div>
-    <div>
-        <a class="base-anchor" href="{{ "/tags/" | relLangURL }}">Find more...</a>
-        <!--coming soon-->
+    <div class="latest-notes">
+        <h2>Latest Talks</h2>
+        <ul>
+            <li class="card">
+                <h2><a href="https://basta.net/net-framework-c/verifizieren-von-business-rules-mit-hilfe-einer-testing-api/">Verify business rules with a Testing API (German)</a> </h2>
+                <p>Thu Sep 23 2021</p>
+            </li>
+            <li class="card">
+                <h2><a href="https://www.developer-week.de/history/speaker-2021/#/speaker/14052-adrin-amin-salehi">Scrum with Azure DevOps (German)</a> </h2>
+                <p>Thu July 1 2021</p>
+            </li>
+        </ul>
     </div>
+</div>
+<div>
+    <a class="base-anchor" href="{{ "/tags/" | relLangURL }}">Find more...</a>
+    <!--coming soon-->
 </div>
