@@ -38,6 +38,10 @@ body {
   background-color: var(--background);
 }
 
+a.base-anchor {
+  color: var(--text-primary);
+}
+
 .container {
   margin-top: 8rem;
   margin-left: 1.5rem;
