@@ -1,13 +1,11 @@
 ---
-title: "Fitness"
+title: "Using tech on my fitness journey"
 sub_header: "Everything about Fitness"
 date: 2022-01-29T18:18:18+01:00
 tags: ["Fitness", "Technology"]
 draft: false
 toc: false
 ---
-
-# Using tech on my fitness journey
 
 As a software engineers, we probably spend a lot of time sitting in front of a computer, which can affect our physical and mental health. That's why engaging in sports, and physical activity is essential for us and our overall health. It can clear your mind and relieve stress.
 
