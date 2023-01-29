@@ -2,7 +2,8 @@
 general--------------------------------------------------------------------------------
 */
 :root {
-  font-family: "Segoe UI", "Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  /* font-family: "Segoe UI", "Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+  font-family: monospace;
   /* --text-primary: #2eff7b;
   --background: #000000; */
   --ggs:1;
