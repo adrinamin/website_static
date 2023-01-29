@@ -3,7 +3,7 @@ title: "Playing around with Hugo static site generator"
 sub_header: ""
 date: 2020-11-28T19:11:32+01:00
 tags: ["Hugo"]
-draft: true
+draft: false
 toc: false
 ---
 

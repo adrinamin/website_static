@@ -3,7 +3,7 @@ title: "Getting a specific page in Hugo"
 sub_header: ""
 date: 2020-11-28T19:12:11+01:00
 tags: ["Hugo","page"]
-draft: true
+draft: false
 toc: false
 ---
 
