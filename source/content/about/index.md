@@ -16,4 +16,4 @@ Hi, I'm Adrin,
 I deeply care about the role of technology in our society. I always try to find ways to use our craft and tools to improve our environment, and eventually peoples lifes. So that in the end, everybody can benefit from new technologies.
 </br></br>
 
-{{< text-style />}}
+{{< /text-style >}}
