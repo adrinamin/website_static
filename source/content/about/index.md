@@ -13,8 +13,7 @@ draft: false
 Hi, I'm Adrin,
 </br>
 </br>
-a tech-savvy fitness enthusiast and software engineer on a mission to help people live their best lives through a combination of cutting-edge technology and good old-fashioned sweat :).
+I deeply care about the role of technology in our society. I always try to find ways to use our craft and tools to improve our environment, and eventually peoples lifes. So that in the end, everybody can benefit from new technologies.
 </br></br>
-I deeply care about the role of technology in our society. I always try to find ways to use our craft and tools to improve our environment, and eventually peoples lifes. So that in the end, everybody can benefit from new technologies.</br></br>
 
 {{< text-style />}}
