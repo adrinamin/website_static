@@ -13,7 +13,9 @@ draft: false
 Hi, I'm Adrin,
 </br>
 </br>
-I deeply care about the role of technology in our society. I always try to find ways to use our craft and tools to improve our environment, and eventually peoples lifes. So that in the end, everybody can benefit from new technologies.
+I'm an athlete and technology enthusiast. These two things are an integral part of my life which I enjoy a lot. Getting better as an athlete, and as a programmer, are pretty similar processes, as it consists of constant learning, failing and growing. This is the reason why I created this web page (it is not really a blog tbh). I see it as a space where I can document all these ups and downs. 
+</br>
+Being a Software Engineer and an amateur athlete means my time is very limited. But If I have time, I try to write down my thoughts to somthing related to those two fields. Maybe, there is something for you?
 </br></br>
 
 {{< /text-style >}}
