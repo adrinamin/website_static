@@ -1,2 +1,3 @@
-# website_static
-My personal static website
+# My personal website
+
+This is the structure of my personal website. I open sourced it and maybe you'll find something useful in it :).
