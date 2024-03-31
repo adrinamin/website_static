@@ -1,0 +1,23 @@
+name: Build Hugo on Pull Request
+
+on:
+  pull_request:
+    branches: [ master, main ]
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout
+      uses: actions/checkout@v4
+
+    - name: setup hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+          hugo-version: 'latest'
+    
+    - name: build source code      
+      run: hugo --minify
+      working-directory: source/

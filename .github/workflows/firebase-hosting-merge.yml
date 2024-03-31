@@ -2,24 +2,23 @@ name: Deploy to Firebase Hosting on merge
 
 on:
   push:
-    branches:
-    - master
+    branches: [ master, main ]
 
 jobs:
   build_and_deploy:
-    name: build and build_and_deploy
+    name: build and deploy
     runs-on: ubuntu-latest
 
     steps:
     - name: checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: setup hugo
       uses: peaceiris/actions-hugo@v2
       with:
           hugo-version: 'latest'
     
-    - name: build      
+    - name: build source code      
       run: hugo --minify
       working-directory: source/
 
