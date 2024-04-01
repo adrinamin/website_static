@@ -4,6 +4,9 @@ on:
   push:
     branches: [ master, main ]
 
+permissions:
+  actions: write
+
 jobs:
   build_and_deploy:
     name: build and deploy
