@@ -1,0 +1,13 @@
+tasks:
+  - name: Install Hugo
+    before: |
+      sudo apt update 
+    init: |
+      sudo apt install hugo
+ports:
+  - port: 1313
+    onOpen: open-browser
+
+vscode:
+  extensions:
+    - budparr.language-hugo-vscode
